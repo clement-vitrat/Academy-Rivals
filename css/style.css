@@ -1,0 +1,431 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* Mise en page de ma page */
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* Animations pour tout le texte de la page */
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+/* Mise en page de roulette */
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+html::-webkit-scrollbar-track {
+    background: #0E2130;
+}
+html::-webkit-scrollbar-thumb {
+    background: #C200FB;
+    border-radius: 5rem;
+}
+body {
+    background: #fff;
+    overflow-x: hidden;
+}
+
+
+
+/* Mise en page de toutes les sections de la page */
+section {
+    padding: 3rem 9%;
+}
+
+
+/* MISE EN PAGE DE MON MENU */
+nav {
+    background: #0E2130;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+/* Différentes caractéristiques du Titre de mon menu */
+nav .logo a {
+    float: left;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+    text-decoration: none;
+}
+nav ul {
+    float: right;
+    margin-right: 40px;
+    list-style: none;
+    position: relative;
+}
+nav ul li {
+   float: left;
+   display: inline-block;
+   background: #0E2130;
+   margin: 0 5px;
+}
+nav ul li a {
+    color: #fff;
+    line-height: 70px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+/* Mise en page du menu active et du menu au contact de la souris */
+nav ul li a:hover,
+nav ul li a.active {
+    border-radius: 5px;
+    background: #C78B29;
+    color: #fff;
+    width: 32%;
+}
+
+.show,.icon,input {
+    display: none;
+}
+
+/* RESPONSIVE */
+/* Mise en page du bouton pour le format Smartphone */
+@media all and (max-width:450px) {
+    nav .logo a {
+        font-size: 24px;
+    }
+}
+/* Mise en page pour tablette */
+@media screen and (min-width:950px) and (max-width:1056px) {
+    nav .logo a {
+        padding-left: 40px;
+        width: 40%;
+    }
+    nav ul {
+        margin-right: 10px;
+    }
+    nav lu li a {
+        line-height: 70px;
+        padding: 7px 11px;
+    }
+}
+/* Mise en page pour le bouton du Menu */
+@media all and (max-width:980px) {
+    nav ul {
+        margin-right: 0px;
+        width: 100%;
+    }
+    nav .logo a {
+        padding-left: 40px;
+        width: 100%;
+    }
+    .show + a, ul {
+        display: none;
+    }
+    nav ul li,nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+    .icon {
+        display: block;
+        color: #06F4F4;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        line-height: 70px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    nav ul ul {
+        top: 70px;
+        border-top: 0px;
+        float: none;
+        position: static;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav ul ul a {
+        padding-left: 40px;
+    }
+    nav ul ul ul a {
+        padding-left: 80px;
+    }
+    nav ul ul ul li {
+        position: static;
+    }
+    [id^=btn]:checked + ul {
+        display: block;
+    }
+    nav ul ul li {
+        border-bottom: 0px;
+    }
+    span.cancel:before {
+        content: '\f00d';
+    }
+}
+
+
+
+/* MISE EN PAGE DE LANDING PAGE */
+.home {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 92vh;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 5rem;
+}
+#home {
+    background: url(../img/evenement.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    text-align: center;
+    padding-top: 6rem;
+    margin:2rem auto;
+    max-width: 84rem;
+}
+.home .content h3{
+    color: #fff;
+    font-size: 6vw;
+    text-transform: uppercase;
+}
+.home .content p, .home .content a {
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 2;
+    text-transform: capitalize;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.home .content p a:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.home .content p a:focus {
+    outline: none;
+}
+
+/* Mise en page pour Smartphone */
+@media (max-width: 768px) {
+    .home {
+        min-height: 48vh;
+    }
+    .home .content h3 {
+        font-size: 11vw;
+    }
+}
+
+
+
+/* MISE EN PAGE DE LA PARTIE TOURNOI */
+#tournoi {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+#tournoi .tournoi_titre {
+    grid-column: 1 / -1;
+    background: #96939B;
+    color: #fff;
+    padding: 20px;
+}
+#tournoi .tournoi_image {
+    grid-column: 1 / -1;
+    background: #96939B;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    padding-right: 1vw;
+}
+#tournoi .tournoi_image img {
+    width: 75%;
+}
+#tournoi h2 {
+    margin-bottom: 6.0pt;
+    line-height: 107%;
+    font-size: 2vw;
+    text-align: left;
+    font-family: 'Georgia',serif;
+    color: #C200FB;
+}
+#tournoi p {
+    color: #fff;
+    margin-right: 2vw;
+    margin-bottom: 1.1vw;
+    margin-left: 0.7vw;
+    text-align: justify;
+    line-height: normal;
+    font-size: 1.2vw;
+    font-family: 'Calibri',sans-serif;
+    text-decoration: none;
+}
+/* Mise en forme pour écran 800px  */
+@media screen and (max-width: 800px) {
+  #tournoi h2 {
+    font-size: 4vw;
+  }
+  #tournoi p {
+    font-size: 2.5vw;
+  }
+}
+/* Mise en forme pour écran entre 1200 px et 1600px  */
+@media screen and (min-width: 800px) and (max-width: 1600px) {
+    #tournoi {
+        grid-template-columns: repeat(2, 45% 55%);
+    }
+    #tournoi .tournoi_titre {
+        grid-column: span 1;
+    }
+    #tournoi .tournoi_image {
+        grid-column: span 1;
+    }
+    #tournoi h2 {
+        font-size: 4vw;
+    }
+    #tournoi p {
+        font-size: 1.5vw;
+    }
+}
+/* Mise en forme pour écran supérieur à 1600px */
+@media screen and (min-width: 1600px) {
+    #tournoi {
+        grid-template-columns: repeat(2, 45% 55%);
+    }
+    #tournoi .tournoi_titre {
+        grid-column: span 1;
+    }
+    #tournoi .tournoi_image {
+        grid-column: span 1;
+    }
+    #tournoi h2 {
+        font-size: 4vw;
+    }
+    #tournoi p {
+        font-size: 1.7vw;
+    }
+}
+
+
+
+
+/* MISE EN PAGE DE LA PARTIE EQUIPE */
+#equipe {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+#equipe .equipe_titre {
+    grid-column: 1 / -1;
+    background: #96939B;
+    color: #fff;
+    padding: 20px;
+}
+#equipe .equipe_image {
+    grid-column: 1 / -1;
+    background: #96939B;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    padding-right: 1vw;
+}
+#equipe .equipe_image img {
+    width: 75%;
+}
+#equipe h2 {
+    margin-bottom: 6.0pt;
+    line-height: 107%;
+    font-size: 2vw;
+    text-align: left;
+    font-family: 'Georgia',serif;
+    color: #C200FB;
+}
+#equipe p {
+    color: #fff;
+    margin-right: 2vw;
+    margin-bottom: 1.1vw;
+    margin-left: 0.7vw;
+    text-align: justify;
+    line-height: normal;
+    font-size: 1.2vw;
+    font-family: 'Calibri',sans-serif;
+    text-decoration: none;
+}
+/* Mise en forme pour écran 800px  */
+@media screen and (max-width: 800px) {
+    #equipe h2 {
+        font-size: 4vw;
+    }
+    #equipe p {
+        font-size: 2.5vw;
+    }
+}
+/* Mise en forme pour écran entre 1200 px et 1600px  */
+@media screen and (min-width: 800px) and (max-width: 1600px) {
+    #equipe {
+        grid-template-columns: repeat(2, 55% 45%);
+    }
+    #equipe .equipe_titre {
+        grid-column: span 1;
+    }
+    #equipe .equipe_image {
+        grid-column: span 1;
+    }
+    #equipe h2 {
+        font-size: 4vw;
+    }
+    #equipe p {
+        font-size: 1.5vw;
+    }
+}
+/* Mise en forme pour écran supérieur à 1600px */
+@media screen and (min-width: 1600px) {
+    #equipe {
+        grid-template-columns: repeat(2, 55% 45%);
+    }
+    #equipe .equipe_titre {
+        grid-column: span 1;
+    }
+    #equipe .equipe_image {
+        grid-column: span 1;
+    }
+    #equipe h2 {
+        font-size: 4vw;
+    }
+    #equipe p {
+        font-size: 1.7vw;
+    }
+}
