@@ -429,3 +429,69 @@ nav ul li a.active {
         font-size: 1.7vw;
     }
 }
+
+
+
+
+
+/* CREATION DU FOOTER */
+footer {
+    position: sticky;
+    background: #0E2130;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+footer .social_icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    color: white;
+    padding: 0;
+    list-style: none;
+}
+footer .social_icon li a {
+    font-size: 20px;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+    color: #06F4F4;
+}
+footer p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+
+/* CREATION DU BOUTON RETOUR AU DE PAGE */
+.retour_haut #myBtn {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    outline: none;
+    background-color: transparent;
+    color: #C78B29;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+.retour_haut #myBtn:hover {
+    background-color: transparent;
+}
