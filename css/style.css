@@ -1,5 +1,9 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap'); /* font-family: 'Rampart One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap'); /* font-family: 'Bitter', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Soyombo&display=swap'); /* font-family: 'Noto Sans Soyombo', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap'); /* font-family: 'Skranji', cursive; */
+
 
 /* Mise en page de ma page */
 * {
@@ -25,27 +29,15 @@ html {
     scroll-padding-top: 9rem;
 }
 /* Mise en page de roulette */
-html::-webkit-scrollbar {
-    width: 1rem;
-}
-html::-webkit-scrollbar-track {
-    background: #0E2130;
-}
-html::-webkit-scrollbar-thumb {
-    background: #C200FB;
-    border-radius: 5rem;
-}
-body {
-    background: #0E2130;
-    overflow-x: hidden;
-}
+html::-webkit-scrollbar {width: 1rem;}
+html::-webkit-scrollbar-track {background: #0E2130;}
+html::-webkit-scrollbar-thumb {background: #C200FB; border-radius: 5rem;}
+body {background: #0E2130; overflow-x: hidden;}
 
 
 
 /* Mise en page de toutes les sections de la page */
-section {
-    padding: 2rem 4%;
-}
+section {padding: 2rem 4%;}
 
 
 /* MISE EN PAGE DE MON MENU */
@@ -61,7 +53,7 @@ nav:after {
     display: table;
 }
 /* Différentes caractéristiques du Titre de mon menu */
-nav .logo a {
+nav .logo a, nav .logo {
     float: left;
     color: #fff;
     font-size: 27px;
@@ -70,10 +62,7 @@ nav .logo a {
     padding-left: 15px;
     text-decoration: none;
 }
-nav .logo img {
-    width: 99px;
-    float: left;
-}
+nav .logo img {width: 99px; float: left;}
 nav ul {
     float: right;
     margin-right: 40px;
@@ -102,48 +91,20 @@ nav ul li a.active {
     width: 32%;
 }
 
-.show,.icon,input {
-    display: none;
-}
+.show,.icon,input {display: none;}
 
 /* RESPONSIVE */
-/* Mise en page du bouton pour le format Smartphone */
-@media all and (max-width:450px) {
-    nav .logo a {
-        font-size: 24px;
-    }
-}
+
 /* Mise en page pour tablette */
-@media screen and (min-width:950px) and (max-width:1056px) {
-    nav .logo a {
-        padding-left: 40px;
-        width: 40%;
-    }
-    nav ul {
-        margin-right: 10px;
-    }
-    nav lu li a {
-        line-height: 70px;
-        padding: 7px 11px;
-    }
+@media screen and (min-width:800px) and (max-width:1056px) {
+    nav ul {margin-right: 10px;}
+    nav lu li a {line-height: 70px; padding: 7px 11px;}
 }
 /* Mise en page pour le bouton du Menu */
-@media all and (max-width:980px) {
-    nav ul {
-        margin-right: 0px;
-        width: 100%;
-    }
-    nav .logo a {
-        padding-left: 40px;
-        width: 100%;
-    }
-    .show + a, ul {
-        display: none;
-    }
-    nav ul li,nav ul ul li {
-        display: block;
-        width: 100%;
-    }
+@media all and (max-width:800px) {
+    nav ul {margin-right: 0px; width: 100%;}
+    .show + a, ul {display: none;}
+    nav ul li{display: block; width: 100%;}
     .icon {
         display: block;
         color: #06F4F4;
@@ -154,38 +115,14 @@ nav ul li a.active {
         cursor: pointer;
         font-size: 25px;
     }
-    nav ul ul {
-        top: 70px;
-        border-top: 0px;
-        float: none;
-        position: static;
-        display: none;
-        opacity: 1;
-        visibility: visible;
-    }
-    nav ul ul a {
-        padding-left: 40px;
-    }
-    nav ul ul ul a {
-        padding-left: 80px;
-    }
-    nav ul ul ul li {
-        position: static;
-    }
-    [id^=btn]:checked + ul {
-        display: block;
-    }
-    nav ul ul li {
-        border-bottom: 0px;
-    }
-    span.cancel:before {
-        content: '\f00d';
-    }
+    [id^=btn]:checked + ul {display: block;}
+    nav ul ul li {border-bottom: 0px;}
+    span.cancel:before {content: '\f00d';}
 }
 
 
 
-//* MISE EN PAGE DE LANDING PAGE */
+/* MISE EN PAGE DE LANDING PAGE */
 .home {
     width: 100%;
     display: -webkit-box;
@@ -227,46 +164,27 @@ nav ul li a.active {
 }
 
 /* MISE EN PAGE DU TITRE DE LA PAGE */
-.home-cours {
-    min-height: 55vh;
-}
-.home-cours .content {
-    max-width: 140rem;
-}
+.home-cours {min-height: 55vh;}
+.home-cours .content {max-width: 140rem;}
 /* Mise en page pour Smartphone */
 @media (max-width: 768px) {
-    .home {
-        min-height: 38vh;
-    }
-    .home .content {
-        padding-top: 9rem;
-        margin: 2rem auto;
-    }
-    .home .content h3 {
-        font-size: 11vw;
-    }
-    .home-cours .content p {
-        font-size: 1rem;
-    }
+    .home {min-height: 38vh;}
+    .home .content {padding-top: 9rem; margin: 2rem auto;}
+    .home .content h3 {font-size: 11vw;}
+    .home-cours .content p {font-size: 1rem;}
 }
 
 /* MISE EN FORME DES DIFFERENTES SECTIONS */
-
-.heading {
-    margin-bottom: 1rem;
-}
+.heading {margin-bottom: 1rem;}
 .heading h1 {
+    font-family: 'Skranji', cursive;
     font-size: 2.5vw;
     color: #c78b29;
     margin: 1vw;
 }
-.heading_campus {
-    text-align: center;
-}
+.heading_campus {text-align: center;}
 @media screen and (max-width:768px) {
-    .heading h1 {
-        font-size: 3.5vw;
-    }
+    .heading h1 {font-size: 3.5vw;}
 }
 
 
@@ -317,58 +235,40 @@ nav ul li a.active {
     text-align: justify;
     line-height: normal;
     font-size: 1.2vw;
-    font-family: 'Calibri',sans-serif;
+    font-family: 'Bitter', serif;
     text-decoration: none;
 }
 @media screen and (max-width: ) {
-    #tournoi p, #equipe p, #campus p {
-        font-size: 2vw;
-    }
+    #tournoi p, #equipe p, #campus p {font-size: 2vw;}
 }
 /* Mise en forme pour écran 800px  */
 @media screen and (max-width: 800px) {
-    #tournoi h2, #equipe h2, #campus h2 {
-        font-size: 4vw;
-    }
-    #tournoi p, #equipe p, #campus p {
-        font-size: 2.5vw;
-    }
+    #tournoi h2, #equipe h2, #campus h2 {font-size: 4vw;}
+    #tournoi p, #equipe p, #campus p {font-size: 2.5vw;}
 }
 /* Mise en forme pour écran entre 1200 px et 1600px  */
 @media screen and (min-width: 800px) and (max-width: 1600px) {
-    #equipe, #tournoi, #campus {
-        grid-template-columns: repeat(2, 35% 65%);
-    }
+    #equipe, #tournoi, #campus {grid-template-columns: repeat(2, 35% 65%);}
     #tournoi .tournoi_titre, #equipe .equipe_titre, #campus .campus_titre {
         grid-column: span 1;
     }
     #tournoi .tournoi_image, #equipe .equipe_image, #campus .campus_image {
         grid-column: span 1;
     }
-    #tournoi h2, #equipe h2, #campus h2 {
-        font-size: 4vw;
-    }
-    #tournoi p, #equipe p, #campus p {
-        font-size: 1.5vw;
-    }
+    #tournoi h2, #equipe h2, #campus h2 {font-size: 4vw;}
+    #tournoi p, #equipe p, #campus p {font-size: 1.5vw;}
 }
 /* Mise en forme pour écran supérieur à 1600px */
 @media screen and (min-width: 1600px) {
-    #equipe, #tournoi, #campus {
-        grid-template-columns: repeat(2, 35% 65%);
-    }
+    #equipe, #tournoi, #campus {grid-template-columns: repeat(2, 35% 65%);}
     #tournoi .tournoi_titre, #equipe .equipe_titre, #campus .campus_titre {
         grid-column: span 1;
     }
     #tournoi .tournoi_image, #equipe .equipe_image, #campus .campus_image {
         grid-column: span 1;
     }
-    #tournoi h2, #equipe h2, #campus h2 {
-        font-size: 4vw;
-    }
-    #tournoi p, #equipe p, #campus p {
-        font-size: 1.7vw;
-    }
+    #tournoi h2, #equipe h2, #campus h2 {font-size: 4vw;}
+    #tournoi p, #equipe p, #campus p {font-size: 1.7vw;}
 }
 
 
@@ -431,7 +331,4 @@ footer p {
     border: none;
     font-size: 20px;
 }
-
-.retour_haut #myBtn:hover {
-    background-color: transparent;
-}
+.retour_haut #myBtn:hover {background-color: transparent;}
