@@ -1,5 +1,5 @@
 /* Google Font */
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap'); /* font-family: 'Rampart One', cursive; */
 
 /* Mise en page de ma page */
 * {
@@ -36,7 +36,7 @@ html::-webkit-scrollbar-thumb {
     border-radius: 5rem;
 }
 body {
-    background: #fff;
+    background: #0E2130;
     overflow-x: hidden;
 }
 
@@ -44,13 +44,13 @@ body {
 
 /* Mise en page de toutes les sections de la page */
 section {
-    padding: 3rem 9%;
+    padding: 2rem 4%;
 }
 
 
 /* MISE EN PAGE DE MON MENU */
 nav {
-    background: #0E2130;
+    background: #96939B;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -79,7 +79,7 @@ nav ul {
 nav ul li {
    float: left;
    display: inline-block;
-   background: #0E2130;
+   background: #96939B;
    margin: 0 5px;
 }
 nav ul li a {
@@ -181,7 +181,7 @@ nav ul li a.active {
 
 
 
-/* MISE EN PAGE DE LANDING PAGE */
+//* MISE EN PAGE DE LANDING PAGE */
 .home {
     width: 100%;
     display: -webkit-box;
@@ -198,174 +198,99 @@ nav ul li a.active {
     padding-bottom: 5rem;
 }
 #home {
-    background: url(../img/evenement.png) no-repeat;
+    background: url(../img/fond.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .home .content{
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 12rem;
     margin:2rem auto;
     max-width: 84rem;
 }
 .home .content h3{
-    color: #fff;
+    color: #06F4F4;
     font-size: 6vw;
-    text-transform: uppercase;
+    font-family: 'Rampart One', cursive;
 }
-.home .content p, .home .content a {
+.home .content p {
     max-width: 60rem;
     margin: 1rem auto;
     font-size: 1.4rem;
     color: #fff;
     line-height: 2;
     text-transform: capitalize;
-    border-radius: 50px;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
-    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
-}
-.home .content p a:hover {
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-.home .content p a:focus {
-    outline: none;
 }
 
+/* MISE EN PAGE DU TITRE DE LA PAGE */
+.home-cours {
+    min-height: 55vh;
+}
+.home-cours .content {
+    max-width: 140rem;
+}
 /* Mise en page pour Smartphone */
 @media (max-width: 768px) {
     .home {
-        min-height: 48vh;
+        min-height: 38vh;
+    }
+    .home .content {
+        padding-top: 9rem;
+        margin: 2rem auto;
     }
     .home .content h3 {
         font-size: 11vw;
     }
+    .home-cours .content p {
+        font-size: 1rem;
+    }
 }
 
+/* MISE EN FORME DES DIFFERENTES SECTIONS */
 
-
-/* MISE EN PAGE DE LA PARTIE TOURNOI */
-#tournoi {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
+.heading {
+    margin-bottom: 1rem;
 }
-#tournoi .tournoi_titre {
-    grid-column: 1 / -1;
-    background: #96939B;
-    color: #fff;
-    padding: 20px;
-}
-#tournoi .tournoi_image {
-    grid-column: 1 / -1;
-    background: #96939B;
-    display: flex;    
-    align-items: center;
-    justify-content: center;
-    padding-right: 1vw;
-}
-#tournoi .tournoi_image img {
-    width: 75%;
-}
-#tournoi h2 {
-    margin-bottom: 6.0pt;
-    line-height: 107%;
-    font-size: 2vw;
-    text-align: left;
-    font-family: 'Georgia',serif;
-    color: #C200FB;
-}
-#tournoi p {
-    color: #fff;
-    margin-right: 2vw;
-    margin-bottom: 1.1vw;
-    margin-left: 0.7vw;
-    text-align: justify;
-    line-height: normal;
-    font-size: 1.2vw;
-    font-family: 'Calibri',sans-serif;
-    text-decoration: none;
-}
-/* Mise en forme pour écran 800px  */
-@media screen and (max-width: 800px) {
-  #tournoi h2 {
-    font-size: 4vw;
-  }
-  #tournoi p {
+.heading h1 {
     font-size: 2.5vw;
-  }
+    color: #c78b29;
+    margin: 1vw;
 }
-/* Mise en forme pour écran entre 1200 px et 1600px  */
-@media screen and (min-width: 800px) and (max-width: 1600px) {
-    #tournoi {
-        grid-template-columns: repeat(2, 45% 55%);
-    }
-    #tournoi .tournoi_titre {
-        grid-column: span 1;
-    }
-    #tournoi .tournoi_image {
-        grid-column: span 1;
-    }
-    #tournoi h2 {
-        font-size: 4vw;
-    }
-    #tournoi p {
-        font-size: 1.5vw;
-    }
-}
-/* Mise en forme pour écran supérieur à 1600px */
-@media screen and (min-width: 1600px) {
-    #tournoi {
-        grid-template-columns: repeat(2, 45% 55%);
-    }
-    #tournoi .tournoi_titre {
-        grid-column: span 1;
-    }
-    #tournoi .tournoi_image {
-        grid-column: span 1;
-    }
-    #tournoi h2 {
-        font-size: 4vw;
-    }
-    #tournoi p {
-        font-size: 1.7vw;
+@media screen and (max-width:768px) {
+    .heading h1 {
+        font-size: 3.5vw;
     }
 }
 
 
 
-
-/* MISE EN PAGE DE LA PARTIE EQUIPE */
-#equipe {
+/* MISE EN PAGE DE LA PARTIE TOURNOI et EQUIPE */
+#tournoi, #equipe {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
 }
-#equipe .equipe_titre {
+#tournoi .tournoi_titre, #equipe .equipe_titre {
     grid-column: 1 / -1;
-    background: #96939B;
+    background: transparent;
     color: #fff;
     padding: 20px;
 }
-#equipe .equipe_image {
+#tournoi .tournoi_image, #equipe .equipe_image {
     grid-column: 1 / -1;
-    background: #96939B;
+    background: transparent;
     display: flex;    
     align-items: center;
     justify-content: center;
     padding-right: 1vw;
+}
+#tournoi .tournoi_image img, #equipe .equipe_image img {
+    width: 75%;
 }
 #equipe .equipe_image img {
-    width: 75%;
+    width: 90%;
 }
-#equipe h2 {
+#tournoi h2, #equipe h2 {
     margin-bottom: 6.0pt;
     line-height: 107%;
     font-size: 2vw;
@@ -373,63 +298,70 @@ nav ul li a.active {
     font-family: 'Georgia',serif;
     color: #C200FB;
 }
-#equipe p {
+#tournoi p, #equipe p {
     color: #fff;
-    margin-right: 2vw;
-    margin-bottom: 1.1vw;
-    margin-left: 0.7vw;
     text-align: justify;
     line-height: normal;
     font-size: 1.2vw;
     font-family: 'Calibri',sans-serif;
     text-decoration: none;
 }
+@media screen and (max-width: ) {
+    #tournoi p, #equipe p {
+        font-size: 2vw;
+    }
+}
 /* Mise en forme pour écran 800px  */
 @media screen and (max-width: 800px) {
-    #equipe h2 {
+    #tournoi h2, #equipe h2 {
         font-size: 4vw;
     }
-    #equipe p {
+    #tournoi p, #equipe p {
         font-size: 2.5vw;
     }
 }
 /* Mise en forme pour écran entre 1200 px et 1600px  */
 @media screen and (min-width: 800px) and (max-width: 1600px) {
+    #tournoi {
+        grid-template-columns: repeat(2, 45% 55%);
+    }
     #equipe {
-        grid-template-columns: repeat(2, 55% 45%);
+        grid-template-columns: repeat(2, 35% 65%);
     }
-    #equipe .equipe_titre {
+    #tournoi .tournoi_titre, #equipe .equipe_titre {
         grid-column: span 1;
     }
-    #equipe .equipe_image {
+    #tournoi .tournoi_image, #equipe .equipe_image {
         grid-column: span 1;
     }
-    #equipe h2 {
+    #tournoi h2, #equipe h2 {
         font-size: 4vw;
     }
-    #equipe p {
+    #tournoi p, #equipe p {
         font-size: 1.5vw;
     }
 }
 /* Mise en forme pour écran supérieur à 1600px */
 @media screen and (min-width: 1600px) {
+    #tournoi {
+        grid-template-columns: repeat(2, 45% 55%);
+    }
     #equipe {
-        grid-template-columns: repeat(2, 55% 45%);
+        grid-template-columns: repeat(2, 35% 65%);
     }
-    #equipe .equipe_titre {
+    #tournoi .tournoi_titre, #equipe .equipe_titre {
         grid-column: span 1;
     }
-    #equipe .equipe_image {
+    #tournoi .tournoi_image, #equipe .equipe_image {
         grid-column: span 1;
     }
-    #equipe h2 {
+    #tournoi h2, #equipe h2 {
         font-size: 4vw;
     }
-    #equipe p {
+    #tournoi p, #equipe p {
         font-size: 1.7vw;
     }
 }
-
 
 
 
@@ -437,7 +369,7 @@ nav ul li a.active {
 /* CREATION DU FOOTER */
 footer {
     position: sticky;
-    background: #0E2130;
+    background: #96939B;
     padding: 10px 40px;
     display: flex;
     justify-content: center;
