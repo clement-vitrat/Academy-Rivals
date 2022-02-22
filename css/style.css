@@ -67,8 +67,12 @@ nav .logo a {
     font-size: 27px;
     font-weight: 600;
     line-height: 70px;
-    padding-left: 60px;
+    padding-left: 15px;
     text-decoration: none;
+}
+nav .logo img {
+    width: 99px;
+    float: left;
 }
 nav ul {
     float: right;
@@ -256,6 +260,9 @@ nav ul li a.active {
     color: #c78b29;
     margin: 1vw;
 }
+.heading_campus {
+    text-align: center;
+}
 @media screen and (max-width:768px) {
     .heading h1 {
         font-size: 3.5vw;
@@ -264,19 +271,23 @@ nav ul li a.active {
 
 
 
-/* MISE EN PAGE DE LA PARTIE TOURNOI et EQUIPE */
-#tournoi, #equipe {
+/* MISE EN PAGE DE LA PARTIE TOURNOI et EQUIPE et CAMPUS */
+#tournoi, #equipe, #campus {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
 }
-#tournoi .tournoi_titre, #equipe .equipe_titre {
+#tournoi .tournoi_titre,
+#equipe .equipe_titre,
+#campus .campus_titre {
     grid-column: 1 / -1;
     background: transparent;
     color: #fff;
     padding: 20px;
 }
-#tournoi .tournoi_image, #equipe .equipe_image {
+#tournoi .tournoi_image,
+#equipe .equipe_image,
+#campus .campus_image {
     grid-column: 1 / -1;
     background: transparent;
     display: flex;    
@@ -284,13 +295,14 @@ nav ul li a.active {
     justify-content: center;
     padding-right: 1vw;
 }
-#tournoi .tournoi_image img, #equipe .equipe_image img {
-    width: 75%;
-}
-#equipe .equipe_image img {
+#tournoi .tournoi_image img,
+#equipe .equipe_image img,
+#campus .campus_image img {
     width: 90%;
 }
-#tournoi h2, #equipe h2 {
+#tournoi h2,
+#equipe h2,
+#campus h2 {
     margin-bottom: 6.0pt;
     line-height: 107%;
     font-size: 2vw;
@@ -298,7 +310,9 @@ nav ul li a.active {
     font-family: 'Georgia',serif;
     color: #C200FB;
 }
-#tournoi p, #equipe p {
+#tournoi p,
+#equipe p,
+#campus p {
     color: #fff;
     text-align: justify;
     line-height: normal;
@@ -307,58 +321,52 @@ nav ul li a.active {
     text-decoration: none;
 }
 @media screen and (max-width: ) {
-    #tournoi p, #equipe p {
+    #tournoi p, #equipe p, #campus p {
         font-size: 2vw;
     }
 }
 /* Mise en forme pour écran 800px  */
 @media screen and (max-width: 800px) {
-    #tournoi h2, #equipe h2 {
+    #tournoi h2, #equipe h2, #campus h2 {
         font-size: 4vw;
     }
-    #tournoi p, #equipe p {
+    #tournoi p, #equipe p, #campus p {
         font-size: 2.5vw;
     }
 }
 /* Mise en forme pour écran entre 1200 px et 1600px  */
 @media screen and (min-width: 800px) and (max-width: 1600px) {
-    #tournoi {
-        grid-template-columns: repeat(2, 45% 55%);
-    }
-    #equipe {
+    #equipe, #tournoi, #campus {
         grid-template-columns: repeat(2, 35% 65%);
     }
-    #tournoi .tournoi_titre, #equipe .equipe_titre {
+    #tournoi .tournoi_titre, #equipe .equipe_titre, #campus .campus_titre {
         grid-column: span 1;
     }
-    #tournoi .tournoi_image, #equipe .equipe_image {
+    #tournoi .tournoi_image, #equipe .equipe_image, #campus .campus_image {
         grid-column: span 1;
     }
-    #tournoi h2, #equipe h2 {
+    #tournoi h2, #equipe h2, #campus h2 {
         font-size: 4vw;
     }
-    #tournoi p, #equipe p {
+    #tournoi p, #equipe p, #campus p {
         font-size: 1.5vw;
     }
 }
 /* Mise en forme pour écran supérieur à 1600px */
 @media screen and (min-width: 1600px) {
-    #tournoi {
-        grid-template-columns: repeat(2, 45% 55%);
-    }
-    #equipe {
+    #equipe, #tournoi, #campus {
         grid-template-columns: repeat(2, 35% 65%);
     }
-    #tournoi .tournoi_titre, #equipe .equipe_titre {
+    #tournoi .tournoi_titre, #equipe .equipe_titre, #campus .campus_titre {
         grid-column: span 1;
     }
-    #tournoi .tournoi_image, #equipe .equipe_image {
+    #tournoi .tournoi_image, #equipe .equipe_image, #campus .campus_image {
         grid-column: span 1;
     }
-    #tournoi h2, #equipe h2 {
+    #tournoi h2, #equipe h2, #campus h2 {
         font-size: 4vw;
     }
-    #tournoi p, #equipe p {
+    #tournoi p, #equipe p, #campus p {
         font-size: 1.7vw;
     }
 }

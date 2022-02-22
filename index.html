@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Icons -->
-        <link rel="icon" href="img/">
+        <link rel="icon" href="img/logo.png">
     </head>
 
     <body>
@@ -25,7 +25,7 @@
         <nav>
             <!-- Création du titre du menu -->
             <div class="logo">
-                <a href="index.html">Academy League</a>
+                <a href="index.html"><img src="img/logo.png" alt="">Academy League</a>
             </div>
             <!-- Création du bouton pour le menu au format smartphone -->
             <label for="btn" class="icon">
@@ -36,10 +36,10 @@
                 <!-- Création du menu avec les sous-menus -->
                 <ul>
                     <li><a href="#">Accueil</a></li>
-                    <li><a href="#tournoi">Tournoi</a></li>
-                    <li><a href="#equipe">Build'r Esport</a></li>
+                    <li><a href="#sect_tournoi">Tournoi</a></li>
+                    <li><a href="#sect_equipe">Build'r Esport</a></li>
                     <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf2UyU5PCwL3GqJZaeKFYWa1pzniF9o6PCbxkxShwfBIV2Jbw/viewform" target="_blank">S'inscrire</a></li>
-                    <li><a href="#">Partager</a></li>
+                    <li><a href="#footer">Partager</a></li>
                 </ul>
         </nav>
 
@@ -70,6 +70,7 @@
 
         </section>
   
+
         <!-- CREATION DE LA PARTIE EQUIPE -->
         <section class="sect_equipe" id="sect_equipe">
             <div class="heading">
@@ -87,8 +88,27 @@
         
         </section>
 
+
+        <!-- CREATION DE LA PARTIE POURQUOI CAMPUS ACADEMY -->
+        <section class="sect_campus" id="sect_campus">
+            <div class="heading heading_campus">
+                <h1>Pourquoi Campus Academy ?</h1>
+            </div>
+
+            <div id="campus">
+                <div class="campus_image">
+                    <img src="https://th.bing.com/th/id/R.e1707c345d5ac10c80a674030e606643?rik=pOsTg5KBoLuNvw&riu=http%3a%2f%2fwww.snut.fr%2fwp-content%2fuploads%2f2015%2f08%2fimage-de-paysage.jpg&ehk=1O5SWKkGpZ8yU%2b%2fAnLXG1v8k6BKxgyiXgHbOWBW1ir0%3d&risl=1&pid=ImgRaw&r=0" alt="">
+                </div>
+                <div class="campus_titre"> 
+                    <p id="comm_equipe">Academy League est une compétition Esport intercampus qui existe depuis 2020. Nous avons créé un tournoi qui a pour objectif de rassembler les campus et les joueurs de jeu vidéo afin de faire découvrir au public ce qu’est Campus Academy et ses filières. Ce tournoi permet de découvrir le jeu vidéo et l’Esport, dans un contexte compétitif et bienveillant. En tant qu’organisateur, notre objectif est de présenter les compétences que nous avons apprises au cours de notre cursus, de vous faire découvrir notre formation et notre passion. Le tournoi sera diffusé via un stream sur Twitch. Notre but est de faire passer un bon moment aux joueurs, leur permettre de jouer avec les autres étudiants, entre amis et avec les intervenants. L’équipe gagnante décroche le titre de “meilleure équipe Academy League 2022”. Celle-ci pourra défendre son titre, ses valeurs l’année suivante, et se verra mise en avant, elle et son campus.</p>
+                </div>
+            </div>
+        
+        </section>
+
+
         <!-- CREATION DU FOOTER -->
-        <footer>
+        <footer id="footer">
             <ul class="social_icon">
                 <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -97,7 +117,7 @@
                 <li><a href="" target="_blank"><i class="fab fa-twitch"></i></a></li>
                 <li><a href="" target="_blank"><i class="fab fa-discord"></i></a></li>
             </ul>
-            <p>Academy League by Build'r Esport © 2022</p>
+            <p>Academy League by Build'r Esport by Agencea © 2022</p>
         </footer>
 
 
