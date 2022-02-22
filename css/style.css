@@ -173,11 +173,14 @@ nav ul li a.active {
     .home .content h3 {font-size: 11vw;}
     .home-cours .content p {font-size: 1rem;}
 }
-
+@font-face {
+    font-family: 'BeaufortforLOL';
+    src: url(../otf/BeaufortforLOL-Regular.otf);
+}
 /* MISE EN FORME DES DIFFERENTES SECTIONS */
 .heading {margin-bottom: 1rem;}
 .heading h1 {
-    font-family: 'Skranji', cursive;
+    font-family: 'BeaufortforLOL';
     font-size: 2.5vw;
     color: #c78b29;
     margin: 1vw;
