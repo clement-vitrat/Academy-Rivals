@@ -155,9 +155,9 @@ nav ul li a.active {
     font-family: 'Rampart One', cursive;
 }
 .home .content p {
-    max-width: 60rem;
+    max-width: 80rem;
     margin: 1rem auto;
-    font-size: 1.4rem;
+    font-size: 3.4rem;
     color: #fff;
     line-height: 2;
     text-transform: capitalize;
@@ -171,16 +171,16 @@ nav ul li a.active {
     .home {min-height: 38vh;}
     .home .content {padding-top: 9rem; margin: 2rem auto;}
     .home .content h3 {font-size: 11vw;}
-    .home-cours .content p {font-size: 1rem;}
+    .home-cours .content p {font-size: 1.5rem;}
 }
 @font-face {
-    font-family: 'BeaufortforLOL';
-    src: url(../otf/BeaufortforLOL-Regular.otf);
+    font-family: 'FullPack';
+    src: url('full Pack 2025.ttf') format('ttf');
 }
 /* MISE EN FORME DES DIFFERENTES SECTIONS */
 .heading {margin-bottom: 1rem;}
 .heading h1 {
-    font-family: 'BeaufortforLOL';
+    font-family: 'FullPack';
     font-size: 2.5vw;
     color: #c78b29;
     margin: 1vw;
@@ -231,50 +231,74 @@ nav ul li a.active {
     font-family: 'Georgia',serif;
     color: #C200FB;
 }
-#tournoi p,
+#tournoi p, #tournoi #comm_tournoi_indice,
 #equipe p,
 #campus p {
     color: #fff;
     text-align: justify;
     line-height: normal;
     font-size: 1.2vw;
-    font-family: 'Bitter', serif;
+    font-family: 'calisto-mt-regular', sans-serif;
     text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
+#tournoi p a, #campus p a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#tournoi p a:hover, #campus p a:hover {color: #C200FB}
 @media screen and (max-width: ) {
     #tournoi p, #equipe p, #campus p {font-size: 2vw;}
 }
 /* Mise en forme pour écran 800px  */
 @media screen and (max-width: 800px) {
     #tournoi h2, #equipe h2, #campus h2 {font-size: 4vw;}
-    #tournoi p, #equipe p, #campus p {font-size: 2.5vw;}
+    #tournoi p, #tournoi a p, #equipe p, #campus p {font-size: 3vw;}
+    #tournoi #comm_tournoi_indice {font-size: 2vw;}
+    #tournoi p a {margin-left: 5px;}
+    .banniere img {padding-top: 20px;}
+
 }
 /* Mise en forme pour écran entre 1200 px et 1600px  */
 @media screen and (min-width: 800px) and (max-width: 1600px) {
-    #equipe, #tournoi, #campus {grid-template-columns: repeat(2, 35% 65%);}
-    #tournoi .tournoi_titre, #equipe .equipe_titre, #campus .campus_titre {
+    #equipe, #tournoi {grid-template-columns: repeat(2, 35% 65%);}
+    #tournoi .tournoi_titre, #equipe .equipe_titre {
         grid-column: span 1;
     }
-    #tournoi .tournoi_image, #equipe .equipe_image, #campus .campus_image {
+    #tournoi .tournoi_image, #equipe .equipe_image {
         grid-column: span 1;
     }
     #tournoi h2, #equipe h2, #campus h2 {font-size: 4vw;}
     #tournoi p, #equipe p, #campus p {font-size: 1.5vw;}
+    .banniere img {padding-top: 20px;}
 }
 /* Mise en forme pour écran supérieur à 1600px */
 @media screen and (min-width: 1600px) {
-    #equipe, #tournoi, #campus {grid-template-columns: repeat(2, 35% 65%);}
-    #tournoi .tournoi_titre, #equipe .equipe_titre, #campus .campus_titre {
+    #equipe, #tournoi {grid-template-columns: repeat(2, 35% 65%);}
+    #tournoi .tournoi_titre, #equipe .equipe_titre {
         grid-column: span 1;
     }
-    #tournoi .tournoi_image, #equipe .equipe_image, #campus .campus_image {
+    #tournoi .tournoi_image, #equipe .equipe_image {
         grid-column: span 1;
     }
     #tournoi h2, #equipe h2, #campus h2 {font-size: 4vw;}
-    #tournoi p, #equipe p, #campus p {font-size: 1.7vw;}
+    #tournoi p, #equipe p, #campus p {font-size: 1.5vw;}
+    .banniere img {padding-top: 20px;}
 }
 
-
+/* MISE EN PAGE DE LA BANNIERE */
+.banniere img {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
 
 
 /* CREATION DU FOOTER */
