@@ -42,7 +42,7 @@
                 <li><a href="#sect_tournoi">Tournoi</a></li>
                 <li><a href="#sect_equipe">Build'r Esport</a></li>
                 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf2UyU5PCwL3GqJZaeKFYWa1pzniF9o6PCbxkxShwfBIV2Jbw/viewform" target="_blank">S'inscrire</a></li>
-                <li><a href="#footer">Partager</a></li>
+                <li><a><button onclick="document.getElementById('sect_partage').style.display='block'" style="width:auto;">Partager</button></a></li>
             </ul>
         </nav>
 
@@ -58,15 +58,15 @@
             </div>
 
             <div id="tournoi">
-                <div class="tournoi_image">
-                    <img src="img/evenement.png" alt="">
-                </div>
                 <div class="tournoi_titre"> 
                     <p id="comm_tournoi">Academy Rivals est un tournoi* jeu vidéo inter-campus. 100% online, il permet aux étudiants des différents campus de s’affronter équitablement de chez eux sur League of Legends. Le tournoi vise à assembler les étudiants et leur amis joueurs ainsi que les néophytes&nbsp;; on se la joue guilde sympathique quoi.</p>
                     <p id="comm_tournoi">Puis, grâce à un stream via Twitch, les partisans et les curieux du jeu et de l’univers Esport peuvent suivre les affrontements des équipes mais aussi apprécier l’accomplissement d’un rêve étudiant.</p>
                     <p id="comm_tournoi">Academy Rivals rallie tous les amateurs de jeux vidéo le samedi 09 avril 2022 sur Twitch et Discord afin de disputer le titre de meilleur campus Esport de l’année&nbsp;!</p>
                     <p id="comm_tournoi_indice">*Tournoi non affilié à RIOT games ni League of Legends.</p>
-                    <p id="comm_tournoi"><a href="doc/Academy_Rivals_Reglement.pdf" target="_blank">Vous trouverez le règlement du tournoi ici.</a></p>
+                    <p id="comm_tournoi"><a href="doc/Academy_Rivals_Reglement.pdf" target="_blank">Réglement Tournoi</a></p>
+                </div>
+                <div class="tournoi_image">
+                    <img src="img/evenement.png" alt="">
                 </div>
             </div>
 
@@ -80,12 +80,12 @@
             </div>
 
             <div id="equipe">
-                <div class="equipe_image">
-                    <img src="img/teams.png" alt="">
-                </div>
                 <div class="equipe_titre"> 
                     <p id="comm_equipe">Build’r Esport a connu bien des changements&nbsp;: sous l’ancien nom RANA, acronyme pour les campus Rennes, Angers, Nantes et Aix-en-Provence, l’agence se renomme afin de ne plus exclure les autres campus mais aussi pour affirmer son caractère.</p>
                     <p id="comm_equipe">Build’r Esport est beaucoup plus ouvert, plus collaboratif et plus fun, ce sont ces valeurs qui font sens pour notre équipe. Notre souhait le plus cher est de vous accompagner et construire vos projets ! Equipe composée d’étudiants en Esport et en MarketCom, nous avons trouvé rapidement des points communs au-delà du jeu vidéo&nbsp;; l’esprit de partage, de bienveillance, de fun mais aussi l’esprit de compétitivité car nous sommes des challengers&nbsp;!</p>
+                </div>
+                <div class="equipe_image">
+                    <img src="img/teams.png" alt="">
                 </div>
             </div>
         </section>
@@ -106,11 +106,36 @@
             <div id="campus">
                 <div class="campus_titre"> 
                     <p id="comm_equipe">Campus Academy c’est un peu comme un serveur pour Build’r Esport. C’est une école qui propose plusieurs filières au sein d’un même campus, notamment les filières de nos membres&nbsp;: Esport et Communication & Marketing. Mais l’école accueille également des InfoTech sans qui ce site web n’aurait pas vu le jour&nbsp;! Avec Campus Academy, c’est qu’on peut faire naître n’importe quel projet grâce à la collaboration des différentes filières&nbsp;! On vous laisse checker leur brochure&nbsp;;)</p>
-                    <p id="comm_equipe"><a href="https://campusacademy.fr/" target="_blank">Vous trouverer toutes les informations de Campus Academy ici.</a></p>
+                    <p id="comm_equipe"><a href="https://campusacademy.fr/" target="_blank">Campus Academy</a></p>
                 </div>
             </div>
         
         </section>
+
+
+        <!-- CREATION DU BOUTON DE PARTAGE -->
+        <section id="sect_partage" class="sect_partage">
+            <form class="form-partage animate" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('sect_partage').style.display='none'" class="close-partage" title="Close Modal">&times;</span>
+                </div>
+                <div class="container">
+                    <p class="reseaux">Nos différents réseaux sociaux !</p>
+                    <ul>
+                        <li><a href="https://www.instagram.com/academy_rivals_/" target="_blank"><i class="fab fa-instagram" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-image: -webkit-linear-gradient(#515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);"></i></a></li>
+                        <li><a href="https://twitter.com/academyrivals_" target="_blank" style="color:#08A0E9;"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/Academy-Rivals-106555158621285" target="_blank" style="color:#3B5998;"><i class="fab fa-facebook"></i></a></li>
+                    </ul>
+                    <ul>    
+                        <li><a href="https://www.tiktok.com/@academyrivals" target="_blank" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-image: -webkit-linear-gradient(#010101, #69C9D0, #EE1D52);"><i class="fab fa-tiktok"></i></a></li>
+                        <li><a href="" target="_blank" style="color:#6441A5;"><i class="fab fa-twitch"></i></a></li>
+                        <li><a href="" target="_blank" style="color:#738ADB;"><i class="fab fa-discord"></i></a></li>
+                    </ul>
+                    <p class="abonne">Abonnez-vous et partagez !</p>
+                </div>
+            </form>
+        </section>
+
 
 
         <!-- CREATION DU FOOTER -->

@@ -18,3 +18,15 @@
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
     }
+
+
+// CONFIGURATION DU BOUTON DE PARTAGE POP-IP 
+    // Recherche du bouton
+    var modal = document.getElementById('sect_partage');
+
+    // Configuration pour fermer la pop-up
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }

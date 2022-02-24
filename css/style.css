@@ -42,7 +42,7 @@ section {padding: 2rem 4%;}
 
 /* MISE EN PAGE DE MON MENU */
 nav {
-    background: #C200FB;
+    background: #D359F7;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -72,7 +72,7 @@ nav ul {
 nav ul li {
    float: left;
    display: inline-block;
-   background: #C200FB;
+   background: #D359F7;
    margin: 0 5px;
 }
 nav ul li a {
@@ -85,7 +85,6 @@ nav ul li a {
 /* Mise en page du menu active et du menu au contact de la souris */
 nav ul li a:hover,
 nav ul li a.active {
-    /*border-radius: 5px;*/
     border-radius: 100px 30px/50px 70px;
     background: #C78B29;
     color: #fff;
@@ -216,14 +215,20 @@ nav ul li a.active {
     margin-bottom: 10px;
 }
 #tournoi p a, #campus p a {
+    border-radius: 100px 30px/50px 70px;
+    padding: 5px;
+    margin-top: 50px;
+    margin-left: 0;
     color: #fff;
     text-decoration: none;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    border: 1px solid;
 }
-#tournoi p a:hover, #campus p a:hover {color: #C200FB}
+#tournoi p a:hover, #campus p a:hover {
+    border-radius: 100px 30px/50px 70px;
+    border: 1px solid #C78B29;
+    background: #C78B29;
+    color: #fff;
+}
 @media screen and (max-width: ) {
     #tournoi p, #equipe p, #campus p {font-size: 2vw;}
 }
@@ -232,13 +237,12 @@ nav ul li a.active {
     #tournoi h2, #equipe h2, #campus h2 {font-size: 4vw;}
     #tournoi p, #tournoi a p, #equipe p, #campus p {font-size: 3vw;}
     #tournoi #comm_tournoi_indice {font-size: 2vw;}
-    #tournoi p a {margin-left: 5px;}
     .banniere img {padding-top: 20px;}
 
 }
 /* Mise en forme pour écran entre 1200 px et 1600px  */
 @media screen and (min-width: 800px) and (max-width: 1600px) {
-    #equipe, #tournoi {grid-template-columns: repeat(2, 35% 65%);}
+    #equipe, #tournoi {grid-template-columns: repeat(2, 65% 35%);}
     #tournoi .tournoi_titre, #equipe .equipe_titre {
         grid-column: span 1;
     }
@@ -251,7 +255,7 @@ nav ul li a.active {
 }
 /* Mise en forme pour écran supérieur à 1600px */
 @media screen and (min-width: 1600px) {
-    #equipe, #tournoi {grid-template-columns: repeat(2, 35% 65%);}
+    #equipe, #tournoi {grid-template-columns: repeat(2, 65% 35%);}
     #tournoi .tournoi_titre, #equipe .equipe_titre {
         grid-column: span 1;
     }
@@ -269,6 +273,115 @@ nav ul li a.active {
     padding-top: 50px;
     padding-bottom: 30px;
 }
+
+
+/* CONFIGURATION DU BOUTON DE PARTAGE */
+button {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+button:hover {opacity: 0.8;}
+/* Centrer les images et position du bouton fermer */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.container {padding: 16px;}
+/* Configuration des différents partages */
+.sect_partage .container h1 {
+    font-family: 'FullPack';
+    font-size: 2.5vw;
+    color: #C78B29;
+    margin: auto auto 2vw auto;
+    font-weight: bold;
+}
+.sect_partage .container .abonne {
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Rampart One', cursive;
+    color: #C200FB;
+}
+.sect_partage .container .reseaux {
+    color: #C78B29;
+    font-size: 3vw;
+    font-family: 'Rampart One', cursive;
+    text-align: center;
+}
+@media screen and (max-width: 800px) {
+    .sect_partage .container .reseaux,
+    .sect_partage .container .abonne {
+        font-size: 6vw;
+    }
+}
+.sect_partage .container ul {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    color: white;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.sect_partage .container li {text-decoration:none;}
+.sect_partage .container li a {
+    font-size: 70px;
+    margin: 10px;
+    display: inline-block;
+    text-decoration:none;
+    transition: 0.5s;
+}
+.sect_partage .container li a:hover {opacity: 30%;}
+/* Configuration de la section de partage */
+.sect_partage {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+/* Configuration de la zone de partage */
+.form-partage {
+    background-color: #E8C2F4;
+    margin: 15% auto 1% auto; 
+    border: 1px solid #888;
+    width: 80%; 
+}
+/* Configuraton du bouton x */
+.close-partage {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close-partage:hover, .close-partage:focus {
+    color: #C200FB;
+    cursor: pointer;
+} 
+/* Animations */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} to {-webkit-transform: scale(1)}
+} 
+@keyframes animatezoom {
+    from {transform: scale(0)} to {transform: scale(1)}
+}
+  
 
 
 /* CREATION DU FOOTER */
