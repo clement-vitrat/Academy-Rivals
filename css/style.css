@@ -42,7 +42,7 @@ section {padding: 2rem 4%;}
 
 /* MISE EN PAGE DE MON MENU */
 nav {
-    background: #96939B;
+    background: #C200FB;
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -62,7 +62,7 @@ nav .logo a, nav .logo {
     padding-left: 15px;
     text-decoration: none;
 }
-nav .logo img {width: 99px; float: left;}
+nav .logo img {width: 118px; float: left;}
 nav ul {
     float: right;
     margin-right: 40px;
@@ -72,7 +72,7 @@ nav ul {
 nav ul li {
    float: left;
    display: inline-block;
-   background: #96939B;
+   background: #C200FB;
    margin: 0 5px;
 }
 nav ul li a {
@@ -85,7 +85,8 @@ nav ul li a {
 /* Mise en page du menu active et du menu au contact de la souris */
 nav ul li a:hover,
 nav ul li a.active {
-    border-radius: 5px;
+    /*border-radius: 5px;*/
+    border-radius: 100px 30px/50px 70px;
     background: #C78B29;
     color: #fff;
     width: 32%;
@@ -121,14 +122,17 @@ nav ul li a.active {
 }
 
 
-
 /* MISE EN PAGE DE LANDING PAGE */
 .home {
-    width: 100%;
+    background: url(../img/home.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 67vh;
+    margin-top: 70px;
+}
+#home {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    min-height: 92vh;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -138,45 +142,12 @@ nav ul li a.active {
             justify-content: center;
     padding-bottom: 5rem;
 }
-#home {
-    background: url(../img/fond.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.home .content{
-    text-align: center;
-    padding-top: 12rem;
-    margin:2rem auto;
-    max-width: 84rem;
-}
-.home .content h3{
-    color: #06F4F4;
-    font-size: 6vw;
-    font-family: 'Rampart One', cursive;
-}
-.home .content p {
-    max-width: 80rem;
-    margin: 1rem auto;
-    font-size: 3.4rem;
-    color: #fff;
-    line-height: 2;
-    text-transform: capitalize;
-}
+@media screen and (min-width: 1700px) and (max-width: 2500px) {.home {min-height: 67vh;}}
+@media screen and (min-width: 800px) and (max-width: 1700px) {.home {min-height: 60vh;}}
+@media screen and (min-width: 1050px) and (max-width: 700px) {.home {min-height: 28vh;}}
+@media screen and (max-width: 800px) {.home {min-height: 28vh;}}
 
-/* MISE EN PAGE DU TITRE DE LA PAGE */
-.home-cours {min-height: 55vh;}
-.home-cours .content {max-width: 140rem;}
-/* Mise en page pour Smartphone */
-@media (max-width: 768px) {
-    .home {min-height: 38vh;}
-    .home .content {padding-top: 9rem; margin: 2rem auto;}
-    .home .content h3 {font-size: 11vw;}
-    .home-cours .content p {font-size: 1.5rem;}
-}
-@font-face {
-    font-family: 'FullPack';
-    src: url('full Pack 2025.ttf') format('ttf');
-}
+
 /* MISE EN FORME DES DIFFERENTES SECTIONS */
 .heading {margin-bottom: 1rem;}
 .heading h1 {
@@ -189,7 +160,6 @@ nav ul li a.active {
 @media screen and (max-width:768px) {
     .heading h1 {font-size: 3.5vw;}
 }
-
 
 
 /* MISE EN PAGE DE LA PARTIE TOURNOI et EQUIPE et CAMPUS */
