@@ -1,1 +1,1 @@
-# Academy-League
+# Academy-Rivals
