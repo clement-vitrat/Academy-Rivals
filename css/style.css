@@ -94,14 +94,13 @@ nav ul li a.active {
 .show,.icon,input {display: none;}
 
 /* RESPONSIVE */
-
 /* Mise en page pour tablette */
-@media screen and (min-width:800px) and (max-width:1056px) {
+@media screen and (min-width:840px) and (max-width:1056px) {
     nav ul {margin-right: 10px;}
     nav lu li a {line-height: 70px; padding: 7px 11px;}
 }
 /* Mise en page pour le bouton du Menu */
-@media all and (max-width:800px) {
+@media all and (max-width:840px) {
     nav ul {margin-right: 0px; width: 100%;}
     .show + a, ul {display: none;}
     nav ul li{display: block; width: 100%;}
@@ -205,9 +204,9 @@ nav ul li a.active {
 #campus p {
     color: #fff;
     text-align: justify;
-    line-height: normal;
+    line-height: 1.5em;
     font-size: 1.2vw;
-    font-family: 'calisto-mt-regular', sans-serif;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
     text-decoration: none;
     margin-top: 10px;
     margin-left: 10px;
@@ -381,7 +380,14 @@ button:hover {opacity: 0.8;}
 @keyframes animatezoom {
     from {transform: scale(0)} to {transform: scale(1)}
 }
-  
+@media screen and (max-width: 457px) {
+    .form-partage {
+        margin: 117% auto 1% auto;
+    }
+    .sect_partage .container li a {
+        font-size: 45px;
+    }
+}
 
 
 /* CREATION DU FOOTER */

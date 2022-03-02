@@ -4,19 +4,19 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" >
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Academy Rivals</title>
+        <title>Les Équipes - Academy Rivals</title>
         <meta content="" name="description">
         <meta content="" name="keywords"> 
         
         <!-- Mes pages CSS -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css" />
 
         <!-- Lien pour icone -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <!-- Icons -->
-        <link rel="icon" href="img/logo.png">
+        <link rel="icon" href="../img/logo.png">
     </head>
 
     <body>
@@ -25,7 +25,7 @@
         <nav>
             <!-- Création du titre du menu -->
             <div class="logo">
-                <a href="index.html"><img src="img/logo.png" alt=""></a>
+                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
             </div>
             <!-- Création du bouton pour le menu au format smartphone -->
             <label for="btn" class="icon">
@@ -34,79 +34,18 @@
             <input type="checkbox"  id="btn">  
             <!-- Création du menu avec les sous-menus -->
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#sect_tournoi">Tournoi</a></li>
-                <li><a href="#sect_equipe">Build'r Esport</a></li>
-                <li><a href="html/equipes.html">Equipes</a></li>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html #sect_tournoi">Tournoi</a></li>
+                <li><a href="../index.html #sect_equipe">Build'r Esport</a></li>
+                <li><a href="#">Equipes</a></li>
                 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf2UyU5PCwL3GqJZaeKFYWa1pzniF9o6PCbxkxShwfBIV2Jbw/viewform" target="_blank">S'inscrire</a></li>
                 <li><a><button onclick="document.getElementById('sect_partage').style.display='block'" style="width:auto;">Partager</button></a></li>
             </ul>
         </nav>
 
-
         <!-- CREATION DE LA LANDING PAGE -->
         <div class="home" id="home"></div>
 
-
-        <!-- CREATION DE LA PARTIE TOURNOI -->
-        <section class="sect_tournoi" id="sect_tournoi">
-            <div class="heading">
-                <h1>TOURNOI ?</h1>
-            </div>
-
-            <div id="tournoi">
-                <div class="tournoi_titre"> 
-                    <p id="comm_tournoi">Academy Rivals est un tournoi* jeu vidéo inter-campus. 100% online, il permet aux étudiants des différents campus de s’affronter équitablement de chez eux sur League of Legends. Le tournoi vise à assembler les étudiants et leur amis joueurs ainsi que les néophytes&nbsp;; on se la joue guilde sympathique quoi.</p>
-                    <p id="comm_tournoi">Puis, grâce à un stream via Twitch, les partisans et les curieux du jeu et de l’univers Esport peuvent suivre les affrontements des équipes mais aussi apprécier l’accomplissement d’un rêve étudiant.</p>
-                    <p id="comm_tournoi">Academy Rivals rallie tous les amateurs de jeux vidéo le samedi 09 avril 2022 sur Twitch et Discord afin de disputer le titre de meilleur campus Esport de l’année&nbsp;!</p>
-                    <p id="comm_tournoi_indice">*Tournoi non affilié à RIOT games ni League of Legends.</p>
-                    <p id="comm_tournoi"><a href="doc/Academy_Rivals_Reglement.pdf" target="_blank">Réglement Tournoi</a></p>
-                </div>
-                <div class="tournoi_image">
-                    <img src="img/evenement.png" alt="">
-                </div>
-            </div>
-
-        </section>
-  
-
-        <!-- CREATION DE LA PARTIE EQUIPE -->
-        <section class="sect_equipe" id="sect_equipe">
-            <div class="heading">
-                <h1>BUILD'R ESPORT ?</h1>
-            </div>
-
-            <div id="equipe">
-                <div class="equipe_titre"> 
-                    <p id="comm_equipe">Build’r Esport a connu bien des changements&nbsp;: sous l’ancien nom RANA, acronyme pour les campus Rennes, Angers, Nantes et Aix-en-Provence, l’agence se renomme afin de ne plus exclure les autres campus mais aussi pour affirmer son caractère.</p>
-                    <p id="comm_equipe">Build’r Esport est beaucoup plus ouvert, plus collaboratif et plus fun, ce sont ces valeurs qui font sens pour notre équipe. Notre souhait le plus cher est de vous accompagner et construire vos projets&nbsp;! Equipe composée d’étudiants en Esport et en MarketCom, nous avons trouvé rapidement des points communs au-delà du jeu vidéo&nbsp;; l’esprit de partage, de bienveillance, de fun mais aussi l’esprit de compétitivité car nous sommes des challengers&nbsp;!</p>
-                </div>
-                <div class="equipe_image">
-                    <img src="img/teams.png" alt="">
-                </div>
-            </div>
-        </section>
-
-
-        <!-- CREATION DE LA BANNIERE -->
-        <div class="banniere">
-            <img src="img/bannière.png" alt="">
-        </div>
-
-
-        <!-- CREATION DE LA PARTIE POURQUOI CAMPUS ACADEMY -->
-        <section class="sect_campus" id="sect_campus">
-            <div class="heading heading_campus">
-                <h1>Pourquoi Campus Academy ?</h1>
-            </div>
-
-            <div id="campus">
-                <div class="campus_titre"> 
-                    <p id="comm_equipe">Campus Academy c’est un peu comme un serveur pour Build’r Esport. C’est une école qui propose plusieurs filières au sein d’un même campus, notamment les filières de nos membres&nbsp;: Esport et Communication & Marketing. Mais l’école accueille également des InfoTech sans qui ce site web n’aurait pas vu le jour&nbsp;! Avec Campus Academy, c’est qu’on peut faire naître n’importe quel projet grâce à la collaboration des différentes filières&nbsp;! On vous laisse checker leur brochure&nbsp;;)</p>
-                    <p id="comm_equipe"><a href="https://campusacademy.fr/" target="_blank">Campus Academy</a></p>
-                </div>
-            </div>
-        </section>
 
 
         <!-- CREATION DU BOUTON DE PARTAGE -->
@@ -133,7 +72,6 @@
         </section>
 
 
-
         <!-- CREATION DU FOOTER -->
         <footer id="footer">
             <ul class="social_icon">
@@ -155,7 +93,7 @@
        
 
         <!-- APPEL DES FEUILLES DE JS -->
-        <script src="js/script.js"></script>
+        <script src="../js/script.js"></script>
 
     </body>
-</html>    
+</html>
